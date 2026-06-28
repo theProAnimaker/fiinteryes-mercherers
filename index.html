@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infinity Merch Store</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<header class="topbar">
+
+<div class="logo">
+<h1>Infinity Merch</h1>
+</div>
+
+<nav class="nav">
+<a href="#products">Shop</a>
+<a href="#about">About</a>
+<a href="login.html" class="login">Sign In</a>
+</nav>
+
+<div class="cart-area">
+
+<button id="cartButton">🛒 <span id="cartCount">0</span></button>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-box">
+
+<h2>Official Infinity Collection</h2>
+
+<p>
+Exclusive plushies, apparel and collectibles.
+</p>
+
+<a href="#products" class="shop-btn">Enter Store</a>
+
+</div>
+
+</section>
+
+<section id="products" class="store">
+
+<h2 class="title">Featured Products</h2>
+
+<div class="grid">
+
+<div class="product-card">
+<img src="images/infinity-image.png">
+<div class="info">
+<h3>Handmade Infinity Plush</h3>
+<span>$25</span>
+<button class="add-cart" data-name="Handmade Infinity Plush" data-price="25">Add to Cart</button>
+</div>
+</div>
+
+<div class="product-card">
+<img src="images/infinity-plushie.png">
+<div class="info">
+<h3>Infinity Plushie</h3>
+<span>$30</span>
+<button class="add-cart" data-name="Infinity Plushie" data-price="30">Add to Cart</button>
+</div>
+</div>
+
+<div class="product-card">
+<img src="images/infinity-shirt.png">
+<div class="info">
+<h3>Infinity T-Shirt</h3>
+<span>$20</span>
+<button class="add-cart" data-name="Infinity T-Shirt" data-price="20">Add to Cart</button>
+</div>
+</div>
+
+<div class="product-card">
+<img src="images/cake-chocolate-plushie.png">
+<div class="info">
+<h3>Cake Chocolate Plushie</h3>
+<span>$28</span>
+<button class="add-cart" data-name="Cake Chocolate Plushie" data-price="28">Add to Cart</button>
+</div>
+</div>
+
+<div class="product-card">
+<img src="images/glassy-plushie.png">
+<div class="info">
+<h3>Glassy Plushie</h3>
+<span>$35</span>
+<button class="add-cart" data-name="Glassy Plushie" data-price="35">Add to Cart</button>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="about" class="about">
+
+<h2>About Infinity</h2>
+
+<p>
+Infinity Merch Store is an official-style collection of plushies, apparel and collectibles inspired by creative animation culture.
+</p>
+
+</section>
+
+<!-- CART -->
+<div id="cartSidebar" class="cart">
+
+<div class="cart-header">
+<h2>Your Cart</h2>
+<button id="closeCart">✖</button>
+</div>
+
+<div id="cartItems"></div>
+
+<div class="cart-footer">
+<h3>Total: $<span id="cartTotal">0</span></h3>
+<button id="clearCart">Clear Cart</button>
+</div>
+
+</div>
+
+<div id="overlay"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
